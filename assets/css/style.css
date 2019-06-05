@@ -1,0 +1,65 @@
+/*Colors:
+#104F55
+#32746D
+#9EC5AB
+#01200F
+#011502
+*/
+
+/* html{
+	background-color:
+	color: #011502;
+	font-family: 'Montserrat', sans-serif;
+}; */
+
+h1{
+	font-size:36px;
+	font-weight:bold;
+}
+
+.content{
+	
+	width:70%;
+	padding:20px;
+	margin:20px auto;
+	border: 2px solid darkblue;
+}
+.h2,h1{
+	text-align: center;
+	color: darkblue;
+
+}
+.h1,h2{
+	text-align: center;
+	color: red;
+
+}
+.content1a{
+	width:70%;
+	padding:20px;
+	margin:20px auto;
+	border: 2px solid darkblue;
+	
+}
+.content1b{
+	width:70%;
+	padding:20px;
+	margin:20px auto;
+	border: 2px solid darkblue;
+	padding-bottom: 200px;
+
+	
+	
+}
+
+.content2{
+	width:70%;
+	padding:20px;
+	margin:20px auto;
+	border: 2px solid darkblue;
+}
+#logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

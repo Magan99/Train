@@ -1,0 +1,118 @@
+<!doctype html>
+
+<head>
+    <title>Metro Transit</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link to Moment.js should go here -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+</head>
+<!-- <nav> -->
+<!-- <div class="row"> -->
+<!-- <div class="navbar"> -->
+<img id="logo" src="assets/images/logo.png">
+<!-- </div> -->
+<!-- </div> -->
+
+
+<!-- </nav> -->
+
+
+<body>
+    <div id="train-table">
+        <tbody id="train-data">
+
+        </tbody>
+    </div>
+
+    <div class="row">
+        <div class="content">
+            <h1>Anytime is train time</h1>
+            <h2>waqtiga tareenka</h2>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="content1b">
+            <div class="text">
+                <h1 style="text-align: center;color :blue;">Schedule</h1>
+            </div>
+            <table class="table table-sm table-hover" id='train-data'>
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency(min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="content2">
+            <div class="col-md-12 p">
+                <h4 style="text-align: center;color :blue;">
+                    Enter Train information</h4>
+            </div>
+            </br>
+            <div class="col-md-12">
+                <label for="exampleFormControlInput1">Train Name</label>
+            </div>
+            <div class="col-md-12 last">
+                <input type="text" id="trainName" class="form-control">
+            </div>
+            </br>
+            <div class="col-md-12">
+                <label for="exampleFormControlInput1">Destination</label>
+            </div>
+            <div class="col-md-12 last">
+                <input type="text" id="destination" class="form-control">
+            </div>
+            </br>
+            <div class="col-md-12">
+                <label for="exampleFormControlInput1">First Train Time (HH:mm - military time)</label>
+            </div>
+            <div class="col-md-12 last">
+                <input type="text" id="firsttime" class="form-control">
+            </div>
+            </br>
+            <div class="col-md-12">
+                <label for="exampleFormControlInput1">Frequency(min)</label>
+            </div>
+            <div class="col-md-12">
+                <input type="text" id="frequency" class="form-control">
+            </div>
+            </br>
+            <div class="col-md-12">
+                <button id="add-item" class="btn btn-primary"
+                    style="color: white;background-color: blue;block-size:30px;width:80px;" type="submit">Add
+                    train</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/times.js"></script>
+</body>
+
+</html>
